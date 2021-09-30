@@ -6,6 +6,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background: url(media/signupBack.jpg);
+    object-fit: cover;
+}
+
 .container {
     width: 500px;
     height: 700px;
@@ -19,7 +24,7 @@
     width: 400px;
     height: 400px;
     position: absolute;
-    background-color: #fcffa67a;
+    background-color: #fff;
     border-radius: 10px;
 }
 

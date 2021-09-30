@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register a Property</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="registrationstyle.css">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="TopNav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="">Find a PG</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="homepage.html" class="nav-link">Home</a></li>
+                        <button class="btn btn-outline my-2 my-sm-0" type="submit">Logout</button>
+                    </ul>                 
+                </div>
+            </nav>
+        </div>
+        <div class="form-container">
+            <form id="register-property" action="" class="register-property">
+                <h1 class="head-title">Register your Property</h1>
+                <div class="input-group grp-1">
+                    <label for="property-name" class="form-label">Property Name</label>
+                    <input type="text" id="property-name" class="form-input" placeholder="Name of your Accommodation" required/>
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-2">
+                    <label for="location" class="form-label">Location</label>
+                    <select class="form-input" name="location" id="location" required>
+                        <option selected disabled value="">--Select--</option>
+                        <option value="Andheri">Andheri</option>
+                        <option value="Mira Road">Mira Road</option>
+                        <option value="Bhayander">Bhayander</option>
+                        <option value="Bandra">Bandra</option>
+                        <option value="Borivali">Borivali</option>
+                        <option value="BKC">BKC</option>
+                        <option value="Churchgate">Churchgate</option>
+                        <option value="Charni Road">Charni Road</option>
+                        <option value="Juhu">Juhu</option>
+                        <option value="Chembur">Chembur</option>
+                        <option value="Santacruz">Santacruz</option>
+                        <option value="Dahisar">Dahisar</option>
+                        <option value="Goregaon">Goregaon</option>
+                        <option value="Vile Parle">Vile Parle</option>
+                        <option value="Jogeshwari">Jogeshwari</option>
+                        <option value="Malad">Malad</option>
+                        <option value="Mahim">Mahim</option>
+                        <option value="Prabhadevi">Prabhadevi</option>
+                        <option value="Mumbai Central">Mumbai Central</option>
+                        <option value="Mumbai CST">Mumbai CST</option>
+                        <option value="Kurla">Kurla</option>
+                        <option value="Sion">Sion</option>
+                        <option value="Worli">Worli</option>
+                        <option value="Navi Mumbai">Navi Mumbai</option>
+                        <option value="Kharghar">Kharghar</option>
+                        <option value="King Circle">King Circle</option>
+                        <option value="Wadala">Wadala</option>
+                        <option value="Vasai">Vasai</option>
+                        <option value="Virar">Virar</option>
+                        <option value="Vidya Vihar">Vidya Vihar</option>
+                        <option value="Nahor">Nahor</option>
+                        <option value="Mankhurd">Mankhurd</option>
+                    </select>
+                </div>
+                <div class="input-group grp-3">
+                    <label for="users-name" class="form-label">Name</label>
+                    <input type="text" id="users-name" class="form-input" placeholder="Your Name" />
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-4">
+                    <label for="Mobile-num" class="form-label">Contact No</label>
+                    <input type="tel" id="Mobile-num" class="form-input" placeholder="Your Mobile Number"/>
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-5">
+                    <label for="emailid" class="form-label">Email ID</label>
+                    <input id="emailid" type="email" class="form-input" placeholder="Your Email ID"/>
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-6">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-input" name="desc" id="description" cols="30" rows="3" placeholder="Describe your Accommodation"></textarea>
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-7">
+                    <label for="deposit" class="form-label">Deposit Amount</label>
+                    <input id="deposit" type="number" class="form-input" placeholder="Deposit Amount"/>
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-8">
+                    <label for="boys-girls" class="form-label">Available for</label>
+                    <select class="form-input" name="type-of-acc" id="boys-girls" required>
+                        <option selected disabled value="">--Choose--</option>
+                        <option value="Both">Both, Boys and Girls</option>
+                        <option value="Boys">Boys</option>
+                        <option value="Girls">Girls</option>
+                    </select>
+                </div>
+                <div class="input-group grp-9">
+                    <label for="maintenance" class="form-label">Maintenance</label>
+                    <input type="number" id="maintenance" class="form-input" placeholder="Specify the Maintenance Charges" required/>
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-10">
+                    <label for="elec-charges" class="form-label">Electricity Charges</label>
+                    <input type="number" id="elec-charges" class="form-input" placeholder="Specify the Electricity Charges" required/>
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-11">
+                    <label for="food" class="form-label">Food Availabilty</label>
+                    <select class="form-input" name="food" id="food" required>
+                        <option selected disabled value="">--Choose--</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="input-group grp-12">
+                    <label for="parking" class="form-label">Parking</label>
+                    <select class="form-input" name="parking" id="parking" required >
+                        <option selected disabled value="">--Choose--</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="input-group grp-13">
+                    <label for="power" class="form-label">Power Backup</label>
+                    <select class="form-input" name="power" id="power" required>
+                        <option selected disabled value="">--Choose--</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="input-group grp-14">
+                    <label for="acrooms" class="form-label">AC Rooms</label>
+                    <select class="form-input" name="acrooms" id="acrooms" required>
+                        <option selected disabled>--Choose--</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="input-group grp-15">
+                    <label for="beds" class="form-label">Number of Beds</label>
+                    <input type="number" id="beds" class="form-input" placeholder="Name of your Accommodation"/>
+                    <small class="form-message"></small>
+                </div>
+                <div class="input-group grp-16">
+                    <label for="imgcontainer" class="form-label">Images for your Property</label>
+                    <div class="imgcontainer">
+                        <input type="file" class="form-images" id="img-files" accept=".jpeg, .jpg, .png" onchange="preview()" multiple/>
+                        <label for="img-files">Choose images</label>
+                        <p id="numofimg">No files Chosen</p>
+                        <div id="imageschosen"></div>
+                    </div>
+                </div>
+
+                <button type="submit" class="registerpropBtn">Register</button>
+            </form>
+        </div>
+
+        <script>
+            let imgFiles = document.getElementById('img-files');
+            let imgHolder = document.getElementById('imageschosen');
+            let numOfFiles = document.getElementById('numofimg');
+
+            function preview() {
+                imgHolder.innerHTML = "";
+                numOfFiles.textContent = `${imgFiles.files.length} Images Selected`;
+
+                for (i of imgFiles.files) {
+                    let reader = new FileReader();
+                    let figure = document.createElement('figure');
+                    let figCaption = document.createElement('figCaption');
+
+                    figCaption.innerText = i.name;
+                    figure.appendChild(figCaption);
+
+                    reader.onload=() =>{
+                        let img = document.createElement("img");
+                        img.setAttribute('src', reader.result);
+                        figure.insertBefore(img,figCaption);
+                    }
+                    imgHolder.appendChild(figure);
+                    reader.readAsDataURL(i);
+                }
+            }
+        </script>
+    </body>
+</html>
